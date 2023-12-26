@@ -27,6 +27,12 @@ of a parallelized shortest pathfinding algorithm.
 - **`utils`**
   - Contains .JS and HTML files for visualizing the map and path.
 
+- **`FinalProject.pdf`**
+  - This document is the final project report, summarizing the implementation and results of the project. 
+  Please note that the folder names referenced in the report may differ slightly from those in this GitHub 
+  repository. This discrepancy arises from modifications made to folder names during the 
+  construction of this GitHub repository.
+
 
 ## Abstraction of Report
 This project conducts a preliminary exploration of the efficiency of shortest pathfinding on grid-based maps by leveraging CUDA parallel computing. The primary objective is to harness the immense computational capabilities of Graphics Processing Units (GPUs) to expedite pathfinding tasks. The baseline is the CPU single-core version of the A* algorithm, widely used for its excellent performance in various video games. However, this study posits that the Breadth-First Search (BFS) algorithm is a more compatible fit for parallelization than the A* algorithm. The core idea revolves around the possibility of a well-designed parallelized BFS advancing the search by one step during each iteration of a kernel function call, potentially attaining an O(n) time complexity in relation to the path length. Building upon this idea, I implement and test a series of parallelized BFS algorithms. The results suggest that the performance of the single-source BFS is slightly lower (0.97) than that of the A* algorithm. The double-source BFS enhances performance by approximately 2.88 times on a 4-way map and an advanced version of double-source BFS further elevates performance to 6.13 times. Notably, on a 6-way map, the advanced double-source BFS shows a remarkable improvement, accelerating performance by up to 16.86 times. These results suggest that a well-designed parallelized Breadth-First Search (BFS) can achieve the shortest path with an O(n) time complexity concerning path length. This study contributes to pathfinding algorithm advancements by demonstrating the potential of GPU parallelism.  
