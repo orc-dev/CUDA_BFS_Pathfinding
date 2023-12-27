@@ -7,6 +7,12 @@ The course covered methodologies such as CUDA, OpenMP, and MPI. The primary obje
 this project is to harness the computational capabilities of GPUs for the implementation 
 of a parallelized shortest pathfinding algorithm.
 
+The objective is to determine the shortest path on a grid-based map, with a specified 
+source cell and target cell. The accompanying image illustrates a straightforward 
+example of a path on both a 4-way and 6-way map. The example grid is 64 x 64, whereas 
+the actual project operates on a map with dimensions of 512 x 512.
+
+![simple map example](img/simple_test_vis.png)
 
 ## Project Structure
 - **`img`**
